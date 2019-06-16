@@ -42,6 +42,27 @@ p resonse
 # => {"status"=>0, "message"=>"ok", "suggestion"=>["を飲んでいます。", "の下にいる象たちの顔が見えています。", "の中に入れられています。"]}
 ```
 
+### Text Summarization
+
+```ruby
+require "a3rt_client"
+p A3rt::Client.text_summarization(apikey: apiKey, sentences: "センテンス1。センテンス2。センテンス3。")
+# => {"message"=>"Summarization is completed", "status"=>0, "summary"=>["センテンス1"]}
+```
+
+### Proofreading API
+
+```ruby
+require "a3rt_client"
+p A3rt::Client.proofreading(apikey: apikey, sentence: "システムの企画から開発・運用まで幅広く関われます。")
+# => {"resultID"=>"4e9ae6450fe2", "status"=>0, "message"=>"ok", "inputSentence"=>"システムの企画から開発・運用まで幅広く関われます。", "normalizedSentence"=>"システムの企画から開発・運用まで幅広く関われます。", "checkedSentence"=>"システムの企画から開発・運用まで幅広く関われます。"}
+```
+
+### Image Search 
+```ruby
+require "a3rt_client"
+p A3rt::Client.text_summarization(apikey: apikey, query: "馬に乗った男性")
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
