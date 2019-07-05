@@ -50,5 +50,3 @@ module A3rt
     end
   end
 end
-# A3rt::Client.text_summarization(apiKey: "DZZyDsXDVyWJFnOYphtldzuX6tz0u2ln", sentences: "こんにちわ。こんにちわ。")
-# A3rt::Client.image_search(apikey: "DZZ9TIu4JvnB87Pv2LHvW6Z3n3KAP9gR", query: "動物")
