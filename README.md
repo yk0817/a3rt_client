@@ -37,7 +37,7 @@ https://a3rt.recruit-tech.co.jp/product/textSuggestAPI/
 ```ruby
 require "a3rt_client"
 # option requrest_parameter: callback, style, separation
-response = A3rt::Client.text_sugges(apikey: apikey, previous_description: "水")
+response = A3rt::Client.text_suggest(apikey: apikey, previous_description: "水")
 p resonse
 # => {"status"=>0, "message"=>"ok", "suggestion"=>["を飲んでいます。", "の下にいる象たちの顔が見えています。", "の中に入れられています。"]}
 ```
@@ -61,7 +61,7 @@ p A3rt::Client.proofreading(apikey: apikey, sentence: "システムの企画か�
 ### Image Search 
 ```ruby
 require "a3rt_client"
-p A3rt::Client.text_summarization(apikey: apikey, query: "馬に乗った男性")
+p A3rt::Client.image_search(apikey: apikey, query: "馬に乗った男性")
 ```
 ## Development
 
