@@ -38,7 +38,7 @@ https://a3rt.recruit-tech.co.jp/product/textSuggestAPI/
 require "a3rt_client"
 # option requrest_parameter: callback, style, separation
 response = A3rt::Client.text_suggest(apikey: apikey, previous_description: "水")
-p resonse
+p response
 # => {"status"=>0, "message"=>"ok", "suggestion"=>["を飲んでいます。", "の下にいる象たちの顔が見えています。", "の中に入れられています。"]}
 ```
 
