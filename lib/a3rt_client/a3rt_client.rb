@@ -3,7 +3,7 @@ require "json"
 
 module A3rt
   class Client
-    DOMAIN = "https://api.a3rt.recruit-tech.co.jp"
+    DOMAIN = "https://api.a3rt.recruit.co.jp"
     
     class << self
       def talk_api(apikey: , query: , callback: nil)
